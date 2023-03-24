@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+/* Navbar Css  */
+* {
+    /* box-sizing: border-box; */
+   
+    margin: 0px;
+    padding: 0;
+  }
+body{
+    background: linear-gradient(
+    to top,
+   
+    #f1c50e 0%,
+    #f1c50e 50%,
+    #db545a 50%,
+    #db545a 100%
+  );
+}
+  
+ .navbar{
+     width: 100%;
+     margin-right: 200px;
+    
+     display: flex;
+     align-items: center;
+     background-color: white;
+ }
+ 
+ .logo{
+    margin-left: 1%;
+ }
+ .name{
+     font-family: 'Bungee';
+     font-size: 32px;
+     margin-left: 2.5%;
+     background-color: white;
+ }
+ 
+ .nav-menu{
+     list-style: none;
+     display: flex;
+     position: absolute;
+     right: 25%;
+     background-color: white;
+ }
+ 
+ .nav-item a{
+     
+     text-decoration: none;
+     padding: 10px 15px;
+     color: gray;
+     size: 16px;
+     font-family: 'Inter', sans-serif;
+     transition: 0.3s;
+     background-color: white;
+ }
+ 
+ .nav-item:hover a{
+     color: black;
+    
+ }
+ 
+ .nav-btn{
+     position: absolute;
+     right: 5%;
+     background-color:#0153FF;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     font-size: 16px;
+     border-radius: 8px;
+     font-family: 'Inter', sans-serif;
+     
+ }
+/* Home Card */
+.homecard{
+    width: 90%;
+    height:800px ;
+    
+    margin: 5%;
+    background-color: white;
+}
+.image{
+    width: 70%;
+    height:400px ;
+    
+    background-color: white;
+}
+.images{
+    width: 100%;
+    height: 100%;
+}
+.General{
+    width: 35% ;
+    height: 400px;
+    border-right:2px solid #f1c50e;
+    background-color: white;
+}
+.logo{
+    width: 22%;
+    height: 95px;
+    
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 40%;
+    background-color: lightgrey;
+}
+.title{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 6px;
+    background-color: white;
+    
+}
+.lower{
+   display: flex;
+   background-color: white;
+}
+.Industry{
+    width: 35% ;
+    height: 400px;
+    border-right:2px solid #f1c50e;
+    background-color: white;
+}
+.Awareness{
+    width: 35% ;
+    height: 400px;
+    border-right:2px solid #f1c50e;
+    background-color: white;
+}
+.logo1{
+    margin-top: 10px;
+}
+.butto{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    color: black !important;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.Indi{
+    margin-top: 5px;
+    text-align: center;
+}
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mongolian&display=swap" rel="stylesheet">
+</head>
+<body>
+     <nav class="navbar">
+            <div class="name">PURE.</div>  
+            <ul class="nav-menu">
+            <li class="nav-item"><a href="#">Home</a></li> 
+            <li class="nav-item"><a href="#companies">User</a></li>
+            <li class="nav-item"><a href="#aboutus">Industry</a></li>
+            <li class="nav-item"><a href="#contact">Awareness</a></li> 
+
+            </ul>
+            <button class="nav-btn">Sign in</button>
+         
+        </nav>
+    <div class="homecard">
+        <div class="image">
+            <img class="images" src="{{url_for('static', filename='/Image/pollution.jpg')}}" >
+        </div>
+        <div class="lower">
+        <a href='prediction' ><div class="General">
+            <div class="logo">
+                <img class="logo1" src="{{url_for('static', filename='/Image/businessman-64.png')}}">
+            </div>
+            <div class="Indi">
+                
+                <a class="title " href="prediction.html">User</a>
+            </div>
+        </div></a>
+        <a href='home2' ><div class="Industry">
+            <div class="logo">
+                <img class="logo1" src="{{url_for('static', filename='/Image/factory-64.png')}}">
+            </div>
+            <div class="Indi">
+                <a class="title " href="home2.html">INDUSTRY</a>
+            </div>      
+        </div></a>
+        <div class="Awareness">
+            <!-- <div class="logo">
+                <img class="logo1" src="factory-64.png">
+            </div> -->
+            <div class="Indi">
+                <!-- <a class="title " href="home2.html">Public Awareness</a> -->
+            </div>
+           
+        </div>
+        </div>
+    </div>
+</body>
+</html>
